@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Flex-Box-1</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Sono:wght@200..800&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+        body {
+            background-color: #4535C1;
+        }
+
+        .container {
+            font-family: 'Sono', sans-serif;
+            margin-top: 0;
+        }
+
+        .pricing-container {
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+
+        }
+
+        .pricing-card,
+        .pricing-card-2 {
+            text-align: left;
+            background-color: #F5F7F8;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .pricing-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-align: left;
+            color: #91DDCF;
+        }
+
+        .pricing-price {
+            font-size: 65px;
+            font-weight: bold;
+            font-family: 'Quicksand', sans-serif;
+            margin-bottom: 10px;
+        }
+
+        .pricing-features {
+            font-family: 'Quicksand', sans-serif;
+            font-weight: lighter;
+            font-size: 15px;
+        }
+
+        .pricing-button {
+            text-align: center;
+        }
+
+        .price-button {
+            background-color: #91DDCF;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .pricing-lists {
+            list-style-type: none;
+            text-align: left;
+        }
+
+        .pricing-features li {
+            margin-bottom: 20px;
+        }
+
+        .pricing-card-2 {
+            padding: 40px;
+        }
+
+        .intro{
+            text-align: center;
+            margin-top: 60px;
+            margin-bottom: 0;
+            color: #F5F7F8;
+            font-size: 20px;
+            font-weight: lighter;
+        }
+
+        @media(max-width:1250px) {
+            .pricing-container {
+                flex-direction: column;
+                height: 100%;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="intro"><p>Choose your plan from the lists</p></div>
+    <div class="container">
+
+        <div class="pricing-container">
+
+
+            <!-- CARD ONE   -->
+            <div class="pricing-card">
+                <div class="pricing-title">Start-up</div>
+                <div class="pricing-price">11.11$</div>
+                <div class="pricing-features">
+                    <ul class="pricing-lists">
+                        <li>Lorem ipsum dolor </li>
+                        <li>Voluptate quis </li>
+                        <li>Minus consequatur</li>
+                </div>
+                <div class="pricing-button"><button class="price-button">Choose your plan</button></div>
+            </div>
+
+            <!-- CARD TWO -->
+            <div class="pricing-card-2">
+                <div class="pricing-title">Intermidiate</div>
+                <div class="pricing-price">15.11$</div>
+                <div class="pricing-features">
+                    <ul class="pricing-lists">
+                        <li>Lorem ipsum dolor </li>
+                        <li>Voluptate quis </li>
+                        <li>Minus consequatur</li>
+                </div>
+                <div class="pricing-button"><button class="price-button">Choose your plan</button></div>
+            </div>
+
+
+
+            <!-- CARD TWO -->
+            <div class="pricing-card">
+                <div class="pricing-title">Expert</div>
+                <div class="pricing-price">17.11$</div>
+                <div class="pricing-features">
+                    <ul class="pricing-lists">
+                        <li>Lorem ipsum dolor </li>
+                        <li>Voluptate quis </li>
+                        <li>Minus consequatur</li>
+                </div>
+                <div class="pricing-button"><button class="price-button">Choose your plan</button></div>
+            </div>
+
+
+        </div>
+
+    </div>
+</body>
+
+</html>
